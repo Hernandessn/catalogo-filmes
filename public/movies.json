@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "O Poderoso Chefão",
+    "year": 1972,
+    "genre": "Drama",
+    "rating": 9.2,
+    "synopsis": "A saga da família mafiosa Corleone, que luta para manter seu poder enquanto o comando passa de pai para filho.",
+    "director": "Francis Ford Coppola"
+  },
+  {
+    "id": 2,
+    "title": "Clube da Luta",
+    "year": 1999,
+    "genre": "Drama",
+    "rating": 8.8,
+    "synopsis": "Um homem entediado com a vida cria um clube secreto de lutas com um vendedor carismático, e a situação sai do controle.",
+    "director": "David Fincher"
+  },
+  {
+    "id": 3,
+    "title": "Matrix",
+    "year": 1999,
+    "genre": "Ficção Científica",
+    "rating": 8.7,
+    "synopsis": "Um hacker descobre que o mundo em que vive é uma simulação e se junta a rebeldes para combater as máquinas.",
+    "director": "Lana e Lilly Wachowski"
+  },
+  {
+    "id": 4,
+    "title": "Interestelar",
+    "year": 2014,
+    "genre": "Ficção Científica",
+    "rating": 8.7,
+    "synopsis": "Exploradores viajam através de um buraco de minhoca em busca de um novo planeta para salvar a humanidade.",
+    "director": "Christopher Nolan"
+  },
+  {
+    "id": 5,
+    "title": "Cidade de Deus",
+    "year": 2002,
+    "genre": "Drama",
+    "rating": 8.6,
+    "synopsis": "A vida de jovens na favela Cidade de Deus, no Rio de Janeiro, entre o crime e a busca por uma saída.",
+    "director": "Fernando Meirelles"
+  },
+  {
+    "id": 6,
+    "title": "Batman: O Cavaleiro das Trevas",
+    "year": 2008,
+    "genre": "Ação",
+    "rating": 9.0,
+    "synopsis": "Batman enfrenta o Coringa, um criminoso que mergulha Gotham no caos.",
+    "director": "Christopher Nolan"
+  },
+  {
+    "id": 7,
+    "title": "Mad Max: Estrada da Fúria",
+    "year": 2015,
+    "genre": "Ação",
+    "rating": 8.1,
+    "synopsis": "Em um deserto pós-apocalíptico, uma guerreira e Max fogem de um tirano em uma perseguição sem trégua.",
+    "director": "George Miller"
+  },
+  {
+    "id": 8,
+    "title": "Toy Story",
+    "year": 1995,
+    "genre": "Animação",
+    "rating": 8.3,
+    "synopsis": "Os brinquedos de um garoto ganham vida quando ele não está por perto, e um cowboy rivaliza com um astronauta novato.",
+    "director": "John Lasseter"
+  },
+  {
+    "id": 9,
+    "title": "Procurando Nemo",
+    "year": 2003,
+    "genre": "Animação",
+    "rating": 8.2,
+    "synopsis": "Um peixe-palhaço atravessa o oceano para encontrar o filho, capturado por um mergulhador.",
+    "director": "Andrew Stanton"
+  },
+  {
+    "id": 10,
+    "title": "Corra!",
+    "year": 2017,
+    "genre": "Terror",
+    "rating": 7.7,
+    "synopsis": "Um jovem visita a família da namorada e descobre um segredo perturbador.",
+    "director": "Jordan Peele"
+  }
+]
