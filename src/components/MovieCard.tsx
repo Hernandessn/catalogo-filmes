@@ -14,7 +14,7 @@ export default function MovieCard({ movie }: MovieCardProps) {
       <p className="meta">{movie.year} · {movie.genre}</p>
       <Rating value={movie.rating} />
       <div className="card-actions">
-        <Link to={/filme/${movie.id}}>Ver detalhes</Link>
+        <Link to={`/filme/${movie.id}`}>Ver detalhes</Link>
         <FavoriteButton movieId={movie.id} />
       </div>
     </article>
