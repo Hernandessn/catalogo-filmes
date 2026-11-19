@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 import { useMovies } from "../hooks/useMovies";
 import { usePageTitle } from "../hooks/usePageTitle";
 import SearchBar from "../components/SearchBar";
-import GenreFilter from "../components/GenreFilter";
+import GenreFilter from "../components/SelectFilter";
 import MovieList from "../components/MovieList";
 
 export default function CatalogPage() {
