@@ -38,6 +38,9 @@ export default function MovieDetailPage() {
     <article className="detail">
       <Link to="/catalogo">← Voltar ao catálogo</Link>
       <h1>{movie.title}</h1>
+      {movie.image && (
+        <img className="poster" src={movie.image} alt={`Pôster de ${movie.title}`} loading="lazy" />
+      )}
       <p className="meta">
         {movie.year} · {movie.genre} · Direção: {movie.director}
       </p>

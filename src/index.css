@@ -126,3 +126,5 @@ input {
 .empty {
   color: #666;
 }
+.poster { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 8px; background: #e5e7eb; }
+.detail .poster { max-width: 280px; }

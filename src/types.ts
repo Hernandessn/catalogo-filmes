@@ -3,6 +3,7 @@
 export interface Movie {
   id: number; // identificador único (usado na rota /filme/:id)
   title: string; // título do filme
+  image?: string;
   year: number; // ano de lançamento
   genre: string; // gênero (ex.: "Ação")
   rating: number; // nota de 0 a 10

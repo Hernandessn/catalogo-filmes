@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
       <FavoritesProvider>
-        <h1>Teste</h1>
+        <App />
       </FavoritesProvider>
     </BrowserRouter>
   </React.StrictMode>

@@ -1,5 +1,5 @@
 import { createContext, useContext, type ReactNode } from "react";
-import { useLocalStorage } from "../hooks/useLocalStorage.ts";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 
 interface FavoritesContextValue {
   favoriteIds: number[];

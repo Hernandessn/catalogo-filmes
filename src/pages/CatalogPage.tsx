@@ -1,4 +1,4 @@
-// useMemo guarda um cálculo; useState guarda busca e gênero.
+// useMemo guarda um cálculo; useState guarda busca e diretor.
 import { useMemo, useState } from "react";
 import { useMovies } from "../hooks/useMovies";
 import { usePageTitle } from "../hooks/usePageTitle";
@@ -14,24 +14,24 @@ export default function CatalogPage() {
   // O estado fica AQUI (na página) e não nos filhos, porque a busca
   // e o filtro precisam ser combinados para filtrar a lista.
   const [search, setSearch] = useState("");
-  const [genre, setGenre] = useState("");
+  const [director, setDirector] = useState("");
 
-  // Lista de gêneros sem repetição (Set), recalculada só quando os filmes mudam.
-  const genres = useMemo(
-    () => Array.from(new Set(movies.map((m) => m.genre))).sort(),
+  // Lista de diretores sem repetição (Set), recalculada só quando os filmes mudam.
+  const directors = useMemo(
+    () => Array.from(new Set(movies.map((m) => m.director))).sort(),
     [movies],
   );
 
-  // Aplica busca por título E filtro de gênero.
-  // Só recalcula quando movies, search ou genre mudam.
+  // Aplica busca por título E filtro de diretor.
+  // Só recalcula quando movies, search ou director mudam.
   const filtered = useMemo(
     () =>
       movies.filter(
         (m) =>
           m.title.toLowerCase().includes(search.toLowerCase()) &&
-          (genre === "" || m.genre === genre),
+          (director === "" || m.director === director),
       ),
-    [movies, search, genre],
+    [movies, search, director],
   );
 
   // Enquanto carrega e se der erro.
@@ -45,11 +45,11 @@ export default function CatalogPage() {
         {/* Input controlado: o valor vem daqui e cada digitação chama setSearch. */}
         <SearchBar value={search} onChange={setSearch} />
         <SelectFilter
-            options={genres}
-            selected={genre}
-            allLabel="Todos os gêneros"
-            onChange={setGenre}
-          />
+          options={directors}
+          selected={director}
+          allLabel="Todos os diretores"
+          onChange={setDirector}
+        />
       </div>
       <p className="meta">{filtered.length} filme(s)</p>
       <MovieList movies={filtered} />

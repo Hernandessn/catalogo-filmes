@@ -7,6 +7,7 @@ const API_URL = "https://ghibliapi.vercel.app/films";
 // Só os campos da API que a gente usa.
 interface GhibliFilm {
   title: string;
+  image: string;
   description: string;
   director: string;
   release_date: string;
@@ -24,6 +25,7 @@ async function fetchFromApi(): Promise<Movie[]> {
   return films.map((f, index) => ({
     id: index + 1, // a API usa ids em texto; aqui usamos a posição na lista
     title: f.title,
+    image: f.image,
     year: Number(f.release_date) || 0,
     genre: "Animação", // todos os filmes do Studio Ghibli são animações
     rating: Number(f.rt_score) / 10 || 0, // nota de 0 a 100 dividida por 10
