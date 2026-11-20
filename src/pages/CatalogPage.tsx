@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 import { useMovies } from "../hooks/useMovies";
 import { usePageTitle } from "../hooks/usePageTitle";
 import SearchBar from "../components/SearchBar";
-import GenreFilter from "../components/SelectFilter";
+import SelectFilter from "../components/SelectFilter";
 import MovieList from "../components/MovieList";
 
 export default function CatalogPage() {
@@ -44,7 +44,12 @@ export default function CatalogPage() {
       <div className="filters">
         {/* Input controlado: o valor vem daqui e cada digitação chama setSearch. */}
         <SearchBar value={search} onChange={setSearch} />
-        <GenreFilter genres={genres} selected={genre} onChange={setGenre} />
+        <SelectFilter
+            options={genres}
+            selected={genre}
+            allLabel="Todos os gêneros"
+            onChange={setGenre}
+          />
       </div>
       <p className="meta">{filtered.length} filme(s)</p>
       <MovieList movies={filtered} />
